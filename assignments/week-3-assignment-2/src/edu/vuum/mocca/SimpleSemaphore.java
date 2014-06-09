@@ -17,7 +17,7 @@ public class SimpleSemaphore {
 	 * Define a ReentrantLock to protect the critical section.
 	 */
 	// TODO - you fill in here
-	Lock lock;
+	final Lock lock;
 
 	/**
 	 * Define a Condition that waits while the number of permits is 0.
@@ -80,11 +80,14 @@ public class SimpleSemaphore {
 	 */
 	void release() {
 		// TODO - you fill in here.
-		lock.lock();
-		permits++;
-		if (permits > 0)
-			permitsIsZero.signal();
-		lock.unlock();
+		try {
+			lock.lock();
+			permits++;
+			if (permits > 0)
+				permitsIsZero.signal();
+		} finally {
+			lock.unlock();
+		}
 	}
 
 	/**

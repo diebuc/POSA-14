@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding="edu/vuum/mocca/ea5cc190e95b11e3aa1e0be7c4148dd9.java" kind="src" path="src"/>
+	<classpathentry excluding="edu/vuum/mocca/ea5cc190e95b11e3aa1e0be7c4148dd9.java|edu/vuum/mocca/aa6763b0e50011e3889c115940294c41.java|edu/vuum/mocca/df83d990e39111e3bb2c21f0d6e46c9d.java" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
