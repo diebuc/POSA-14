@@ -91,7 +91,7 @@ public class PlayPingPong implements Runnable
                 acquire();
 
                 mPlatformStrategy.print
-                    (mStringToPrint + "(" + loopsDone + ")");
+                    (mStringToPrint + "( " + loopsDone + " )");
 
                 release();
             }
